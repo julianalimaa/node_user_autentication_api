@@ -1,0 +1,13 @@
+{
+  "name": "ms-authentication",
+  "version": "1.0.0",
+  "description": "Microservice criado durante bootcamp da DIO",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./",
+    "build": "tsc -p ."
+  },
+  "author": "Juliana Lima",
+  "license": "ISC"
+}
