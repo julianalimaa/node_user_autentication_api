@@ -1,10 +1,13 @@
 import { Request, Response, NextFunction } from "express";
 import { StatusCodes } from "http-status-codes";
 import DatabaseError from "../models/erros/database.error.model";
+import ForbiddenError from "../models/erros/forbidden.error.model";
 
 function errorHandler(error: any, req: Request, res: Response, netx: NextFunction) {
     if(error instanceof DatabaseError){
         res.sendStatus(StatusCodes.BAD_REQUEST)
+    } else if (error instanceof ForbiddenError) {
+        res.sendStatus(StatusCodes.FORBIDDEN);
     }else {
         res.sendStatus(StatusCodes.INTERNAL_SERVER_ERROR)
     }

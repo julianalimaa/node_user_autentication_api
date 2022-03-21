@@ -15,10 +15,12 @@
     "express": "^4.17.3",
     "http-status-code": "^2.1.0",
     "http-status-codes": "^2.2.0",
+    "jsonwebtoken": "^8.5.1",
     "pg": "^8.7.3"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
     "@types/pg": "^8.6.5",
     "ts-node-dev": "^1.1.8"
   }
